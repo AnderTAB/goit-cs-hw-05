@@ -66,7 +66,7 @@ def visualize_top_words(result, top_n=10):
 
     # Створення графіка
     plt.figure(figsize=(10, 6))
-    plt.bar(words, counts, color='skyblue')
+    plt.barh(words, counts, color='skyblue')
     plt.xlabel('Frequency')
     plt.ylabel('Words')
     plt.title('Top {} Most Frequent Words'.format(top_n))
